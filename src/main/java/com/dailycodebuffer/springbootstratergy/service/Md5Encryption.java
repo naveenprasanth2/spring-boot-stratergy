@@ -1,5 +1,8 @@
 package com.dailycodebuffer.springbootstratergy.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Md5Encryption implements Encryption {
     @Override
     public void encrypt(String plainText) {
