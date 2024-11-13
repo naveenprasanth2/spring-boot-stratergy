@@ -1,7 +1,9 @@
 package com.dailycodebuffer.springbootstratergy.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.EnumMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -9,7 +11,9 @@ import java.util.Set;
 public class StrategyFactory {
     Map<EncryptionType, Encryption> map;
 
+    @Autowired
     public StrategyFactory(Set<Encryption> encryption) {
+        map = new EnumMap<>(EncryptionType.class);
         setEncryption(encryption);
     }
 

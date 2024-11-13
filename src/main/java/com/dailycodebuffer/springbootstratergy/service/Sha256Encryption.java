@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class Sha256Encryption implements Encryption {
     @Override
     public void encrypt(String plainText) {
-        System.out.println("The given String " + plainText + " is sha256 encrypted");
+        System.out.println("The given String " + plainText + " is SHA256 encrypted");
     }
 
     @Override
