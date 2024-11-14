@@ -1,6 +1,6 @@
 package com.dailycodebuffer.springbootstratergy.service;
 
-public enum EncryptionType {
+public enum EncryptionEnum {
     MD5,
     SHA1,
     SHA256

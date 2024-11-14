@@ -5,12 +5,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class Sha1Encryption implements Encryption{
     @Override
-    public void encrypt(String plainText) {
-        System.out.println("The given String " + plainText + " is SHA1 encrypted");
+    public void encrypt(String message) {
+        System.out.println("The message encrypted using sha1 algorithm");
     }
 
     @Override
-    public EncryptionType getEncryptionType() {
-        return EncryptionType.SHA1;
+    public EncryptionEnum getEncryption() {
+        return EncryptionEnum.SHA1;
     }
 }
